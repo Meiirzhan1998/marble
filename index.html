@@ -9,16 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <title>Marble</title>
 </head>
 
 <body class="index">
 
   <header class="header">
-    <div class="container">
+    <div class="container ">
       <div class="header__inner">
         <div class="header__logo logo">
           <a class="logo__link" href="#">
@@ -104,10 +103,10 @@
     </div>
   </section>
 
-  <section class="latest-work">
+  <section class="latest-work flex">
     <div class="container">
       <h3 class="latest-work__title">latest work</h3>
-      <ul class="lw__list">
+      <ul class="lw__list flex">
         <li class="lw__item">
           <a class="lw__item-link" href="">
             <img class="lw__img" src="img/lw-img-1.jpg" alt="lw-image">
@@ -120,20 +119,20 @@
         <li class="lw__item">
           <a class="lw__item-link" href="">
             <img class="lw__img" src="img/lw-img-2.jpg" alt="lw-image">
-            <h3 class="lw__item-title">Nobis Business Card</h3>
+            <h3 class="lw__item-title">New Fun project</h3>
           </a>
-          <h5 class="lw__item-subtitle">Business Card, Graphic</h5>
-          <p class="lw__item-descr">Sed pos uere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet
-            rutrum.</p>
+          <h5 class="lw__item-subtitle">web Design, Application</h5>
+          <p class="lw__item-descr">Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Vestibulum id ligula
+            porta felis.</p>
         </li>
         <li class="lw__item">
           <a class="lw__item-link" href="#">
             <img class="lw__img" src="img/lw-img-3.jpg" alt="lw-img">
-            <h3 class="lw__item-title">Nobis Business Card</h3>
+            <h3 class="lw__item-title">Passionaries Branding Cover</h3>
           </a>
-          <h5 class="lw__item-subtitle">Business Card, Graphic</h5>
-          <p class="lw__item-descr">Sed pos uere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet
-            rutrum.</p>
+          <h5 class="lw__item-subtitle">Branding, Graphic Design</h5>
+          <p class="lw__item-descr">Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget
+            metus.</p>
         </li>
       </ul>
     </div>
@@ -141,9 +140,12 @@
 
   <section class="descr">
     <div class="container">
-      <article class="descr__article">Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta
-        gravida at eget metus.
-        Duis mollis, est non commodo luctus erat porttitor. </article>
+      <div class="descr__inner">
+        <img class="descr-img" src="img/”.png" alt="none">
+        <article class="descr__article">Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta
+          gravida at eget metus.
+          Duis mollis, est non commodo luctus erat porttitor. </article>
+      </div>
     </div>
 
   </section>
@@ -151,7 +153,7 @@
 
   <footer class="footer">
     <div class="container">
-      <ul class="footer__list">
+      <ul class="footer__list flex">
         <li class="footer__item">
           <h4 class="footer__item-title">Get in touch</h4>
           <p class="footer__item-descr">
@@ -171,11 +173,11 @@
         <li class="footer__item">
           <h4 class="footer__item-title">popular posts</h4>
           <p class="footer__item-descr">
-            <a href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a>
+            <a class="footer__li-link" href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a>
             <p class="footer__item-date">14 Nov, 2012</p>
-            <a href="#">Scelerisque nisl consectetur et.</a>
+            <a class="footer__li-link" href="#">Scelerisque nisl consectetur et.</a>
             <p class="footer__item-date">22 May, 2012</p>
-            <a href="#">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a>
+            <a class="footer__li-link" href="#">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a>
             <p class="footer__item-date">15 July, 2012</p>
 
           </p>
@@ -190,16 +192,23 @@
         </li>
       </ul>
 
-      <adress class="footer__adress">
-        Moonshine Street No: 14/05 <br>
-        Light City, Jupiter
-        <a class="footer__adress-phone" href="tel:+0247 541 65 87">0247 541 65 87</a>
-        <a href="mailto:support@longwave.com">support@longwave.com</a>
+      <div class="adress">
+        <adress class="footer__adress">
+          Moonshine Street No: 14/05 <br>
+          Light City, Jupiter
+          <br>
+          <a class="footer__adress-phone" href="tel:+0247 541 65 87">0247 541 65 87</a>
+          <a class="link-mailto" href="mailto:support@longwave.com">support@longwave.com</a>
+        </adress>
+      </div>
 
-      </adress>
+      <img class="gor-line" src="img/Line.png" alt="gorizontal line">
+
+      <p class="cop-info">© 2013 Marble. All rights reserved. Theme by elemis.</p>
     </div>
-  </footer>
 
+
+  </footer>
 </body>
 
 </html>
