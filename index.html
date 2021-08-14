@@ -6,7 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <title>Marble</title>
 </head>
 
 <body class="index">
@@ -20,8 +26,8 @@
           </a>
         </div>
 
-        <nav class="header__nav">
-          <ul class="menu">
+        <nav class="header__nav flex">
+          <ul class="menu flex">
             <li class="menu__item">
               <a class="menu__link menu__link--active" href="#">Home</a>
             </li>
@@ -47,19 +53,19 @@
     </div>
   </header>
 
-  <section class="index__banner banner">
+  <section class="index__banner banner flex">
     <div class="container">
-      <h1 class="banner__title">We are a digital & branding agency based in London</h1>
-      <h2 class="banner__subtitle">We love to turn great ideas into beautiful products</h2>
-      <a href="#">see portfolio</a>
+      <h2 class="banner__title">We are a digital & branding agency based in London</h2>
+      <h3 class="banner__subtitle">We love to turn great ideas into beautiful products</h3>
+      <div class="banner__btn flex"><a class="banner__link" href="#">see portfolio</a></div>
     </div>
   </section>
 
-  <section class="services">
+  <section class="services flex">
     <div class="container">
-      <ul class=services__list>
+      <ul class="services__list flex">
         <li class="services__item">
-          <div class="services__bg-img-1">
+          <div class="services__bg bgc-1 flex">
             <img class="services__item-img" src="img/pellentesque.png" alt="pellentesque"></div>
           <a class="services__item-link" href="#">
             <h3 class="services__item-title">Pellentesque</h3>
@@ -68,7 +74,7 @@
             condimentum velit dapibus.</p>
         </li>
         <li class="services__item">
-          <div class="services__bg-img-2">
+          <div class="services__bg bgc-2 flex">
             <img class="services__item-img" src="img/consectetur.png" alt="consectetur"></div>
           <a class="services__item-link" href="#">
             <h3 class="services__item-title">Consectetur</h3>
@@ -77,7 +83,7 @@
             consectetur dui.</p>
         </li>
         <li class="services__item">
-          <div class="services__bg-img-3">
+          <div class="services__bg bgc-3 flex">
             <img class="services__item-img" src="img/tristiquet.png" alt="tristiquet"></div>
           <a class="services__item-link" href="#">
             <h3 class="services__item-title">Tristiquet</h3>
@@ -86,7 +92,7 @@
             massa justo risus.</p>
         </li>
         <li class="services__item">
-          <div class="services__bg-img-4">
+          <div class="services__bg bgc-4 flex">
             <img class="services__item-img" src="img/fermentum.png" alt="fermentum"></div>
           <a class="services__item-link" href="#">
             <h3 class="services__item-title">Fermentum</h3>
@@ -100,6 +106,7 @@
 
   <section class="latest-work">
     <div class="container">
+      <h3 class="latest-work__title">latest work</h3>
       <ul class="lw__list">
         <li class="lw__item">
           <a class="lw__item-link" href="">
@@ -133,58 +140,64 @@
   </section>
 
   <section class="descr">
-    <p class="">Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus.
-      Duis mollis, est non commodo luctus erat porttitor. </p>
+    <div class="container">
+      <article class="descr__article">Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta
+        gravida at eget metus.
+        Duis mollis, est non commodo luctus erat porttitor. </article>
+    </div>
+
   </section>
 
 
   <footer class="footer">
-    <ul class="footer__list">
-      <li class="footer__item">
-        <h4 class="footer__item-title">Get in touch</h4>
-        <p class="footer__item-descr">
-          Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.
-        </p>
-      </li>
-      <li class="footer__item">
-        <h4 class="footer__item-title">twitter</h4>
-        <p class="footer__item-descr">
-          Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.
-          <br>
-          Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.
-          <br>
-          Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.
-        </p>
-      </li>
-      <li class="footer__item">
-        <h4 class="footer__item-title">popular posts</h4>
-        <p class="footer__item-descr">
-          <a href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a>
-          <p class="footer__item-date">14 Nov, 2012</p>
-          <a href="#">Scelerisque nisl consectetur et.</a>
-          <p class="footer__item-date">22 May, 2012</p>
-          <a href="#">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a>
-          <p class="footer__item-date">15 July, 2012</p>
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <h4 class="footer__item-title">Get in touch</h4>
+          <p class="footer__item-descr">
+            Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.
+          </p>
+        </li>
+        <li class="footer__item">
+          <h4 class="footer__item-title">twitter</h4>
+          <p class="footer__item-descr">
+            Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.
+            <br>
+            Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.
+            <br>
+            Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.
+          </p>
+        </li>
+        <li class="footer__item">
+          <h4 class="footer__item-title">popular posts</h4>
+          <p class="footer__item-descr">
+            <a href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a>
+            <p class="footer__item-date">14 Nov, 2012</p>
+            <a href="#">Scelerisque nisl consectetur et.</a>
+            <p class="footer__item-date">22 May, 2012</p>
+            <a href="#">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a>
+            <p class="footer__item-date">15 July, 2012</p>
 
-        </p>
-      </li>
-      <li class="footer__item">
-        <h4 class="footer__item-title">about us</h4>
-        <p class="footer__item-descr">
-          Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor
-          ligula, eget lacinia odio sem nec elit. <br> Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus curabitur blandit tempus.
-        </p>
-      </li>
-    </ul>
+          </p>
+        </li>
+        <li class="footer__item">
+          <h4 class="footer__item-title">about us</h4>
+          <p class="footer__item-descr">
+            Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor
+            ligula, eget lacinia odio sem nec elit. <br> Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus curabitur blandit tempus.
+          </p>
+        </li>
+      </ul>
 
-    <adress class="footer__adress">
-      Moonshine Street No: 14/05 <br>
-      Light City, Jupiter
-      <a class="footer__adress-phone" href="tel:+0247 541 65 87">0247 541 65 87</a>
-      <a href="mailto:support@longwave.com">support@longwave.com</a>
+      <adress class="footer__adress">
+        Moonshine Street No: 14/05 <br>
+        Light City, Jupiter
+        <a class="footer__adress-phone" href="tel:+0247 541 65 87">0247 541 65 87</a>
+        <a href="mailto:support@longwave.com">support@longwave.com</a>
 
-    </adress>
+      </adress>
+    </div>
   </footer>
 
 </body>
